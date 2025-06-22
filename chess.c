@@ -17,7 +17,7 @@ int main() {
     printf("\nMovimento do Bispo:\n");
     while (bishopCounter <= bishopSteps) {
         printf("Cima Direita\n");
-        bishopCounter++;  // incremento para sair do loop
+        bishopCounter++;
     }
 
     printf("\nMovimento da Rainha:\n");
@@ -25,6 +25,22 @@ int main() {
         printf("Esquerda\n");
         queenCounter++;
     } while (queenCounter <= queenSteps);
+
+    
+    printf("\nMovimento do Cavalo:\n");
+    int horseDownMoves = 2;
+    int horseLeftMoves = 1;
+    int horseMoveComplete = 1;
+    int horseCounter; 
+
+    while (horseMoveComplete--) {
+        for (horseCounter = 0; horseCounter < horseDownMoves; horseCounter++) {
+            printf("Baixo\n");
+        }
+        for (horseCounter = 0; horseCounter < horseLeftMoves; horseCounter++) {
+            printf("Esquerda\n");
+        }
+    }
 
     return 0;
 }
