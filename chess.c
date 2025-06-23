@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/*
+ * As funções towerMovement, queenMovement e bishopMovement simulam os movimentos
+ * de peças do xadrez (torre, rainha e bispo) usando recursividade.
+ * A recursão é usada como uma forma de repetição onde cada chamada representa
+ * um passo, e o processo continua até atingir a condição de parada.
+ */
 void rookMovement(int remainingMoves) {
     if (remainingMoves == 0) {
         return;
@@ -30,6 +36,12 @@ void bishopMovement(int verticalMoves, int horizontalMoves) {
     bishopMovement(verticalMoves - 1, horizontalMoves);
 }
 
+/*
+ * knightMovement representa o movimento fixo do cavalo (em "L"):
+ * dois passos para cima e um para a direita.
+ * Não usa recursividade porque o movimento é único e fixo,
+ * então é melhor usar um loop simples.
+ */
 void knightMovement() {
     int upMoves = 2;
     int rightMoves = 1;
