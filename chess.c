@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-void towerMovement(int remainingMoves) {
+void rookMovement(int remainingMoves) {
     if (remainingMoves == 0) {
         return;
     }
     printf("Direita\n");
-    towerMovement(remainingMoves - 1);
+    rookMovement(remainingMoves - 1);
 }
 
 void queenMovement(int remainingMoves) {
@@ -46,13 +46,13 @@ void knightMovement() {
 }
 
 int main() {
-    int towerMoves = 5;
+    int rookMoves = 5;
     int bishopVerticalMoves = 5;
     int bishopHorizontalMoves = 1;
     int queenMoves = 8;
 
     printf("\nMovimento da Torre:\n");
-    towerMovement(towerMoves);
+    rookMovement(rookMoves);
 
     printf("\nMovimento do Bispo:\n");
     bishopMovement(bishopVerticalMoves, bishopHorizontalMoves);
