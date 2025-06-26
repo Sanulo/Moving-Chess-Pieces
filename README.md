@@ -9,7 +9,7 @@ Features:
 - Simple input configuration via variables in the code (no user input needed).
 
 Project Structure:
-- main.c — Contains all the movement functions and the main execution flow.
+- chess.c — Contains all the movement functions and the main execution flow.
 - Clear separation of piece movement logic into individual functions.
 
 How to Run:
